@@ -1,0 +1,13 @@
+syntax = "proto3";
+package ncoin.ncoin.v1;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "N-Coin/x/ncoin/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "ncoin/x/ncoin/Params";
+  option (gogoproto.equal) = true;
+}
